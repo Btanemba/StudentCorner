@@ -115,7 +115,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-5 mb-lg-0" src="img/DanStephen.jpeg" alt="" />
+                    <img class="img-fluid rounded mb-5 mb-lg-0" src="img/DanStephen.jpeg" alt=""  />
                 </div>
                 <div class="col-lg-7">
                     <p class="section-title pr-5">
@@ -215,7 +215,7 @@ Studying in Austria and Europe can be a highly rewarding experience, offering ac
             <div class="row">
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
-                        <img class="img-fluid w-100" src="img/Benedict-24.jpg" alt="" />
+                        <img class="img-fluid w-100" src="img/CEO.jpg" alt="" />
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px"
@@ -236,7 +236,7 @@ Studying in Austria and Europe can be a highly rewarding experience, offering ac
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
-                        <img class="img-fluid w-100" src="img/Benedict-24.jpg"alt="" />
+                        <img class="img-fluid w-100" src="img/Daniel.jpeg" style="height: 200px;"   alt="" />
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px"

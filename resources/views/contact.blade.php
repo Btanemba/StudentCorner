@@ -6,7 +6,7 @@
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
             <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <p class="m-0"><a class="text-white" href="{{ url('/') }}">Home</a></p>
                 <p class="m-0 px-2">/</p>
                 <p class="m-0">Contact Us</p>
             </div>
@@ -71,14 +71,14 @@
                         We'd love to hear from you! Whether you have a question about our services, need assistance, or just
                         want to provide feedback, our team is here to help.
                     </p>
-                    <div class="d-flex">
+                    <!-- <div class="d-flex">
                         <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                             style="width: 45px; height: 45px"></i>
                         <div class="pl-3">
                             <h5>Address</h5>
                             <p>123 Street, New York, USA</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="d-flex">
                         <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                             style="width: 45px; height: 45px"></i>
@@ -87,23 +87,23 @@
                             <p>anembaben@gmail.com</p>
                         </div>
                     </div>
-                    <!-- <div class="d-flex">
+                    <div class="d-flex">
                   <i
                     class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                     style="width: 45px; height: 45px"
                   ></i>
                   <div class="pl-3">
                     <h5>Phone</h5>
-                    <p>+012 345 67890</p>
+                    <p>+2349023250180</p>
                   </div>
-                </div> -->
+                </div>
                     <div class="d-flex">
                         <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                             style="width: 45px; height: 45px"></i>
                         <div class="pl-3">
                             <h5>Opening Hours</h5>
-                            <strong>Sunday - Friday:</strong>
-                            <p class="m-0">08:00 AM - 05:00 PM</p>
+                            <strong>Monday - Sunday:</strong>
+                            <p class="m-0">08:00 AM - 11:00 PM</p>
                         </div>
                     </div>
                 </div>
