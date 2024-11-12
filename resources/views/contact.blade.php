@@ -71,14 +71,7 @@
                         We'd love to hear from you! Whether you have a question about our services, need assistance, or just
                         want to provide feedback, our team is here to help.
                     </p>
-                    <!-- <div class="d-flex">
-                        <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                            style="width: 45px; height: 45px"></i>
-                        <div class="pl-3">
-                            <h5>Address</h5>
-                            <p>123 Street, New York, USA</p>
-                        </div>
-                    </div> -->
+
                     <div class="d-flex">
                         <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                             style="width: 45px; height: 45px"></i>
@@ -102,8 +95,8 @@
                             style="width: 45px; height: 45px"></i>
                         <div class="pl-3">
                             <h5>Opening Hours</h5>
-                            <strong>Monday - Sunday:</strong>
-                            <p class="m-0">08:00 AM - 11:00 PM</p>
+                            <strong>Monday - Friday</strong>
+                            <p class="m-0">08:00 AM - 4:00 PM</p>
                         </div>
                     </div>
                 </div>

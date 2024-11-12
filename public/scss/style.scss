@@ -30,12 +30,33 @@ $btn-border-radius: 30px;
 /********** Custom CSS ************/
 
 .section-title {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $primary;
+    @media (max-width: 576px) {
+        font-size: 1.2rem;
+    }
 }
+
+// .section-title {
+//     position: relative;
+//     display: inline-block;
+//     letter-spacing: 1px;
+//     text-transform: uppercase;
+//     color: $primary;
+// }
+.navbar-light .navbar-nav .nav-link {
+    padding: 2rem 1rem; // Changes the padding to be responsive
+    color: $secondary;
+    outline: none;
+    @media (max-width: 576px) {
+        padding: 1rem 0.5rem;
+    }
+}
+
 
 .section-title span {
     position: relative;
