@@ -1,13 +1,13 @@
 <!-- Footer Start -->
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-6 col-md-6 mb-5">
                 <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
                     style="font-size: 40px; line-height: 40px">
 
-                    <span class="text-white">SC</span>
+                    <span class="text-white">Student Corner</span>
                 </a>
-                <p>
+                <p class="text-justify">
                 Studying abroad can be a life-changing experience, offering students the opportunity to gain a global perspective, develop new skills, and immerse themselves in a different culture.
                 Student Corner is here to help you achieve your dreams.
                 </p>
@@ -45,4 +45,4 @@
 
 
     </div>
-  
+
