@@ -36,7 +36,7 @@
     <!-- Header End -->
 
     <!-- Facilities Start -->
-    <div class="container-fluid pt-5">
+    {{-- <div class="container-fluid pt-5">
         <div class="container pb-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6 pb-1">
@@ -128,6 +128,125 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+
+    <div class="container-fluid pt-5">
+        <div class="container pb-3">
+            <div class="row">
+                <!-- Authentication Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#authCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="authCollapse">AUTHENTICATION</a>
+                            </h4>
+                            <div id="authCollapse" class="collapse">
+                                <p class="m-0">
+                                    Authentication is a process used to verify your Document and this is done at the Ministry
+                                    of Education & Foreign Affairs -> [Nigerians]
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Verification Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#verifyCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="verifyCollapse">VERIFICATION</a>
+                            </h4>
+                            <div id="verifyCollapse" class="collapse">
+                                <p class="m-0">
+                                    Verification is one of the Most Important stages. <br>
+                                    You have to book an appointment with the Embassy. <br> OR <br>
+                                    Austria embassy in Nigeria has officially partnered with VFS Global for appointment for
+                                    document legalization.
+                                    <br>
+                                    Click here for appointment:
+                                    <a href="https://visa.vfsglobal.com/nga/en/aut" target="_blank">VFS Appointment</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Legalization Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#legalCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="legalCollapse">LEGALIZATION</a>
+                            </h4>
+                            <div id="legalCollapse" class="collapse">
+                                <p class="m-0">
+                                    This is done after Verification. Legalization is simply making your document usable in
+                                    Austria.
+                                    <br>
+                                    Applicants from other Countries should contact the Austrian Embassy closest to them for more information on Legalization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admission Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#admissionCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="admissionCollapse">ADMISSION APPLICATION</a>
+                            </h4>
+                            <div id="admissionCollapse" class="collapse">
+                                <p class="m-0">
+                                    The admission application process can be competitive and demanding, but with careful
+                                    planning and preparation, you can present a strong application. Research your options,
+                                    understand the requirements, and ensure all your documents are in order. Good luck with your
+                                    application journey!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Residence Permit Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#residenceCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="residenceCollapse">RESIDENCE PERMIT</a>
+                            </h4>
+                            <div id="residenceCollapse" class="collapse">
+                                <p class="m-0">
+                                    Securing a residence permit is essential for studying in Austria or any European country. By
+                                    understanding the requirements, gathering the necessary documents, and following the correct
+                                    procedures, you can ensure a smooth application process. Remember to apply well in advance
+                                    and stay informed about any changes in immigration policies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Visa/Flight Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#visaCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="visaCollapse">VISA/FLIGHT</a>
+                            </h4>
+                            <div id="visaCollapse" class="collapse">
+                                <p class="m-0">
+                                    This is the last stage of the process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Facilities Start -->
 
@@ -164,7 +283,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <p class="section-title pr-5">
-                        <span class="pr-2">Book Appointment</span>
+                        <span class="pr-2">Book Appointment for </span>
                     </p>
                     <h1 class="mb-4">Book Appointment with any of the Ambassadors</h1>
                     <p>
@@ -172,7 +291,10 @@
                         We will respond with an appropriate date and time.
                         <br>
 
+
                     </p>
+                    <br>
+                    <h4 class="mb-4">DO YOU WANT TO BECOME AN AMBASSADOR? <br><br> CONTACT US NOW!!!</h4>
 
                     <!-- <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a> -->
                 </div>
@@ -190,7 +312,7 @@
                     @endif
                     <div class="card border-0">
                         <div class="card-header bg-secondary text-center p-4">
-                            <h1 class="text-white m-0">Book Appointment</h1>
+                            <h1 class="text-white m-0">Book Appointment FOR &#8364 20</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form action="{{ url('dataInsert') }}" method="post" enctype="multipart/form-data">
@@ -210,7 +332,9 @@
                                         <option value="Daniel">Daniel Sesan</option>
                                         <option value="Stephen">Mary Farma</option>
                                         <option value="Malachi">Malachi Gblee</option>
-                                        <option value="Thessy">Peter Ohwoka</option>
+                                        <option value="Peter">Peter Ohwoka</option>
+                                        <option value="Akinola ">Akinola Lanre Olusegun </option>
+                                        <option value="Nnenna ">Uzoma Nnenna Okey </option>
                                     </select>
                                 </div>
                                 <div>
@@ -239,7 +363,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/CEO2.jpg" style="height: 250px;" alt="" />
+                        <img class="img-fluid w-100" src="img/Benedict-24.jpg" style="height: 250px;" alt="" />
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px"
@@ -317,6 +441,22 @@
                     <i>Free-lance Virtual Assistant</i><br>
                     <i>Admission Process Assistant</i><br>
                     <i>Location: Nigeria</i>
+                </div>
+
+                <div class="col-md-6 col-lg-3 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                        <img class="img-fluid w-100" src="img/Akin.jpeg" style="height: 250px;"alt="" />
+                        <div
+                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
+                                href="https://www.linkedin.com/in/mary-farma-13448879?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <h4>Akinola, Lanre Olusegun </h4>
+                    <i>Masters in Artificial intelligence and Cybersecurity <br>
+                     Alpen-Adria-Universität  </i><br>
+                    <i>Location: Klagenfurt,  Austria</i>
                 </div>
             </div>
         </div>

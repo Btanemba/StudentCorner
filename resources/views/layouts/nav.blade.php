@@ -20,6 +20,9 @@
                         <a href="#" class="dropdown-item">Mary Farma</a>
                         <a href="#" class="dropdown-item">Malachi Gblee</a>
                         <a href="#" class="dropdown-item">Peter Ohwoka</a>
+                        <a href="#" class="dropdown-item">Uzoma Nnenna Okey</a>
+                        <a href="#" class="dropdown-item">Akinola, Lanre Olusegun</a>
+
 
                     </div>
 
