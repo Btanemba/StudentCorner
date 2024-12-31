@@ -13,6 +13,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\TextInput;
 
 class BookingsResource extends Resource
 {
@@ -38,14 +39,25 @@ class BookingsResource extends Resource
             Tables\Columns\TextColumn::make('email'),
             Tables\Columns\TextColumn::make('ambassador')
             ->searchable(),
-           
+
             ])
             ->filters([
                 //
             ])
             ->actions([
+
+                Tables\Actions\ViewAction::make()
+                ->form([
+                    TextInput::make('ambassador'),
+                    TextInput::make('email'),
+                    TextInput::make('name'),
+
+                    // ...
+                ]),
                 Tables\Actions\DeleteAction::make(),
                 // Tables\Actions\EditAction::make(),
+
+
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
