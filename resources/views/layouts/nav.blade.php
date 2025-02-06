@@ -16,12 +16,15 @@
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ambassadors</a>
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="#" class="dropdown-item">Benedict Anemba</a>
-                        <a href="#" class="dropdown-item">Daniel Sesan</a>
-                        <a href="#" class="dropdown-item">Mary Farma</a>
-                        <a href="#" class="dropdown-item">Malachi Gblee</a>
-                        <a href="#" class="dropdown-item">Peter Ohwoka</a>
+                        <a href="#" class="dropdown-item">Daniel Sesan (Austria)</a>
+                        <a href="#" class="dropdown-item">Mary Farma (Netherlands)</a>
+                        <a href="#" class="dropdown-item">Malachi Gblee (Switzerland)</a>
+                        <a href="#" class="dropdown-item">Peter Ohwoka (China)</a>
                         <a href="#" class="dropdown-item">Uzoma Nnenna Okey</a>
-                        <a href="#" class="dropdown-item">Akinola, Lanre Olusegun</a>
+                        <a href="#" class="dropdown-item">Hyeladzira James (United Kingdoms)</a>
+                        <a href="#" class="dropdown-item">Akinola, Lanre Olusegun (Austria)</a>
+                        <a href="#" class="dropdown-item">Estherine Efeti Lisinge (Austria)</a>
+
 
 
                     </div>

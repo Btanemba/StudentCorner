@@ -35,101 +35,11 @@
     </div>
     <!-- Header End -->
 
-    <!-- Facilities Start -->
-    {{-- <div class="container-fluid pt-5">
-        <div class="container pb-3">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>AUTHENTICATION</h4>
-
-                            <p class="m-0">
-                                Authentication is a process used to verify your Document and this is done at the Minstry of
-                                Education & Foreign Affairs -> [Nigerians]
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <a href="https://appointment.bmeia.gv.at/" target="_blank">
-                                <h4>VERIFICATION</h4>
-                            </a>
-                            <p class="m-0">
-                                Verification is one of the Most Important stage. <br>
-                                You have to book an appointment with the Embassy. <br> OR <br>
-                                Austria embassy in Nigeria has officially partner with VFS Global for appointment for
-                                documents legalization.
-
-
-
-                                click here for appointment <a href="https://visa.vfsglobal.com/nga/en/aut" target="_blank">VFS Appointment</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>LEGALIZATION</h4>
-                            <p class="m-0">
-                                This is done after Verification. Legalization is simply making your document usable in
-                                Austria.
-                                <br>
-                                Applicant from other Countries shoul contact the Austrian Embassy closest to them for more information on Legalization.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-                        <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>ADMISSION APPLICATION</h4>
-                            <p class="m-0">
-                                The admission application process can be competitive and demanding, but with careful
-                                planning and preparation, you can present a strong application. Research your options,
-                                understand the requirements, and ensure all your documents are in order. Good luck with your
-                                application journey!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-                        <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>RESIDENCE PERMIT</h4>
-                            <p class="m-0">
-                                Securing a residence permit is essential for studying in Austria or any European country. By
-                                understanding the requirements, gathering the necessary documents, and following the correct
-                                procedures, you can ensure a smooth application process. Remember to apply well in advance
-                                and stay informed about any changes in immigration policies.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>VISA/FLIGHT</h4>
-                            <p class="m-0">
-                                This is the last stage of the process.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
+    <div class="attention-banner">
+        <marquee behavior="scroll" direction="left">
+            🚨 ATTENTION ATTENTION 🚨 Do you Intend on Applying for a BSC Program in Austria from Nigeria ?? JAMB and IELT REQUIRED! 🚨 ATTENTION ATTENTION 🚨
+        </marquee>
+    </div>
     <div class="container-fluid pt-5">
         <div class="container pb-3">
             <div class="row">
@@ -329,11 +239,13 @@
                                     <select class="custom-select border-0 px-4" name="ambassador" style="height: 47px">
                                         <option selected>Choose an Ambassador</option>
                                         <option value="Benedict Anemba">Benedict Anemba</option>
-                                        <option value="Daniel">Daniel Sesan</option>
-                                        <option value="Stephen">Mary Farma</option>
-                                        <option value="Malachi">Malachi Gblee</option>
-                                        <option value="Peter">Peter Ohwoka</option>
-                                        <option value="Akinola ">Akinola Lanre Olusegun </option>
+                                        <option value="Daniel">Daniel Sesan (Austria)</option>
+                                        <option value="Stephen">Mary Farma (Netherlands)</option>
+                                        <option value="Malachi">Malachi Gblee (Switzerland)</option>
+                                        <option value="Peter">Peter Ohwoka (China)</option>
+                                        <option value="Akinola ">Akinola Lanre Olusegun (Austria)</option>
+                                        <option value="Hyeladzira ">Hyeladzira James (United Kingdoms)</option>
+                                        <option value="Estherine ">Estherine Efeti Lisinge (Austria) </option>
                                         <option value="Nnenna ">Uzoma Nnenna Okey </option>
                                     </select>
                                 </div>
@@ -352,7 +264,7 @@
     <!-- Registration End -->
 
     <!-- Team Start -->
-    <div class="container-fluid pt-5">
+    {{-- <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
                 <p class="section-title px-5">
@@ -460,8 +372,170 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Team End -->
+
+    <!-- Team Start -->
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="text-center pb-2">
+            <p class="section-title px-5">
+                <span class="px-2">Our Ambassadors</span>
+            </p>
+            <h1 class="mb-4">Meet Our Ambassadors</h1>
+        </div>
+        <div class="row">
+            <!-- Benedict Anemba -->
+            <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Benedict-24.jpg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#benedict-info">Benedict Anemba</h4>
+                <div id="benedict-info" class="info collapse">
+                    <i>Founder</i><br>
+                    <i>Masters in Communication Engineering - CUAS</i><br>
+                    <i>Junior Software Developer</i><br>
+                    <i>Instagram Social Media Ambassador for CUAS</i><br>
+                    <i>Entrepreneur</i><br>
+                    <a href="https://x.com/anembaben" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/btanemba/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Daniel Ilesanmi -->
+            <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/danny.jpeg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#daniel-info">Daniel Ilesanmi</h4>
+                <div id="daniel-info" class="info collapse">
+                    <i>RF Component and Software Development Engineer</i><br>
+                    <i>Electronics Embedded Systems Design</i><br>
+                    <i>Social Media Ambassador for CUAS</i><br>
+                    <i>Entrepreneur</i><br>
+                    <a href="https://www.linkedin.com/in/ilesanmi-sesan-daniel-89518326" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Malachi Gblee -->
+            <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Malachi.jpg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#malachi-info">Malachi Gblee</h4>
+                <div id="malachi-info" class="info collapse">
+                    <i>Masters of Science in Global Business</i><br>
+                    <i>Location: Switzerland</i><br>
+                    <i>Works with the Liberian Permanent Mission as a Researcher</i><br>
+                    <a href="https://www.linkedin.com/in/malachi-gblee-90127114b" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mary Farma -->
+            <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Mary.jpeg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#mary-info">Mary Farma</h4>
+                <div id="mary-info" class="info collapse">
+                    <i>Bachelor in Finance & Accounting</i><br>
+                    <i>Location: Netherlands</i><br>
+                    <a href="https://www.linkedin.com/in/mary-farma-13448879" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Uzoma Nnenna Okey -->
+            <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Nneena.jpeg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#nneena-info">Uzoma Nnenna Okey</h4>
+                <div id="nneena-info" class="info collapse">
+                    <i>Freelance Virtual Assistant</i><br>
+                    <i>Admission Process Assistant</i><br>
+                    <i>Location: Nigeria</i><br>
+                    <a href="https://www.linkedin.com/in/nnenna-uzoma-98b61b252" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Akinola Lanre Olusegun -->
+            <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Akin.jpeg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#akin-info">Akinola Lanre Olusegun</h4>
+                <div id="akin-info" class="info collapse">
+                    <i>Masters in Artificial Intelligence and Cybersecurity</i><br>
+                    <i>Alpen-Adria-Universität</i><br>
+                    <i>Location: Klagenfurt, Austria</i><br>
+                    <a href="https://www.linkedin.com/in/akinola-lanre-olusegun-409784102/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+             <!-- Ella Zirah -->
+             <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Ella3.jpg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#ella-info">Hyeladzira James</h4>
+                <div id="ella-info" class="info collapse">
+                    <i>Masters in Computing with Advanced Practice</i><br>
+                    <i>Teesside University</i><br>
+                    <i>Location: United Kingdoms</i><br>
+                    <i>Intern at Hugo Bea ltd</i><br>
+                    <i>Junior Software Developer & UI.UX Designer</i><br>
+                    <a href="https://www.linkedin.com/in/hyeladzira-james-435a03231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+              <!-- Estherine Efeti Lisinge -->
+              <div class="col-md-6 col-lg-3 text-center team mb-5">
+                <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
+                    <img class="img-fluid w-100" src="img/Estherine.jpg" style="height: 250px;" alt="" />
+                </div>
+                <h4 class="toggle-info" data-target="#estherine-info">Estherine Efeti Lisinge</h4>
+                <div id="estherine-info" class="info collapse">
+                    <i>BSc Robotics & Artificial Intelligence.</i><br>
+                    <i>University of Klagenfurt</i><br>
+                    <i></i><br>
+                    <a href="https://www.linkedin.com/in/estherine-lisinge-b7b30952/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+<!-- JavaScript for toggling the information -->
+<script>
+    document.querySelectorAll(".toggle-info").forEach(item => {
+        item.addEventListener("click", function () {
+            let target = document.querySelector(this.getAttribute("data-target"));
+            if (target.classList.contains("show")) {
+                target.classList.remove("show");
+            } else {
+                document.querySelectorAll(".info").forEach(info => info.classList.remove("show"));
+                target.classList.add("show");
+            }
+        });
+    });
+</script>
+
 
 
 @endsection
