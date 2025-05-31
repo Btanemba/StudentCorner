@@ -44,7 +44,7 @@
     <div class="container-fluid pt-5">
         <div class="container pb-3">
             <div class="row">
-                <!-- Authentication Section -->
+                               <!-- Authentication Section -->
                 <div class="col-lg-4 col-md-6 pb-1">
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
                         <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
@@ -168,6 +168,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 pb-1">
+    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+        <div class="pl-4">
+            <h4>
+                <a href="#germanCollapse" class="text-dark" data-toggle="collapse" role="button"
+                    aria-expanded="false" aria-controls="germanCollapse">LEARN GERMAN</a>
+            </h4>
+            <div id="germanCollapse" class="collapse">
+                <p class="m-0">
+
+
+                    Start learning early with our recommended <a href="https://www.etsy.com/shop/LingoSheets?ref=profile_header" target="_blank">GERMAN LEARNING MATERIALS</a> to prepare for your Austrian adventure. Our curated resources help you build vocabulary, grammar, and conversational skills specifically useful for academic and daily life in Austria.
+                    <br><br>
+                    German language proficiency is essential for anyone considering studying or relocating to Austria. While some university programs are offered in English, daily life, administrative processes, and social integration all require German skills.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </div>
     </div>

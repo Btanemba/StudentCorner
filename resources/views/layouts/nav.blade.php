@@ -41,6 +41,7 @@
                     </div>
 
                 </div>
+                
                 <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
             </div>
             <a href="#appointment" class="btn btn-primary px-4">Book Session</a>
