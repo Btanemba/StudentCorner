@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Booking_table;
 use App\Models\BookingTable;
-
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -12,34 +10,34 @@ class BookingController extends Controller
     function BookingIndex(){
         return view('index');
     }
+    
     public function DataInsert(Request $request)
     {
         // Validate the incoming request data
         $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'country' => 'required|string|max:255',
+            'city' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'ambassador' => 'required|string|max:255',
         ]);
 
-        // Extract validated data
-        $name = $validatedData['name'];
-        $email = $validatedData['email'];
-        $ambassador = $validatedData['ambassador'];
-
-        // Insert the data into the database
+        // Insert the data into the database with separate first/last names
         $isInsertSuccess = BookingTable::create([
-            'name' => $name,
-            'email' => $email,
-            'ambassador' => $ambassador,
+            'first_name' => $validatedData['first_name'],
+            'last_name' => $validatedData['last_name'],
+            'email' => $validatedData['email'],
+            'country' => $validatedData['country'],
+            'city' => $validatedData['city'],
+            'ambassador' => $validatedData['ambassador'],
         ]);
 
         // Check if the insertion was successful and provide feedback
         if ($isInsertSuccess) {
-            // Redirect back with a success message
-            return redirect()->back()->with('success', 'Book Appointment successfully!');
+            return redirect()->back()->with('success', 'Appointment booked successfully!');
         } else {
-            // Redirect back with an error message
-            return redirect()->back()->with('error', 'Failed to Book Appointment. Please try again.');
+            return redirect()->back()->with('error', 'Failed to book appointment. Please try again.');
         }
     }
 }

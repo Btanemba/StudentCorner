@@ -263,8 +263,20 @@
                             <form action="{{ url('dataInsert') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" name="name"
-                                        placeholder="Your Name" required="required" />
+                                    <input type="text" class="form-control border-0 p-4" name="first_name"
+                                        placeholder="First Name" required="required" />
+                                </div>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control border-0 p-4" name="last_name"
+                                        placeholder="Last Name" required="required" />
+                                </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control border-0 p-4" name="country"
+                                        placeholder="Country of Residence" required="required" />
+                                </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control border-0 p-4" name="city"
+                                        placeholder="City of Residence" required="required" />
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control border-0 p-4" name="email"
