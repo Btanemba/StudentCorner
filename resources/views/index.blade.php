@@ -29,7 +29,8 @@
 
             </div>
             <div class="col-lg-6 text-center text-lg-right">
-                <img class="img-fluid mt-5" src="img/DanStephenLibrary.jpeg" alt="" />
+               <img class="img-fluid mt-5" src="img/Int.jpg" alt="" style="width: 350px; height: 350px; margin-bottom:30px;" />
+
             </div>
         </div>
     </div>
