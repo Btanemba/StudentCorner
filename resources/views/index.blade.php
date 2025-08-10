@@ -157,8 +157,8 @@
                         <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>
-                                <a href="#visaCollapse" class="text-dark" data-toggle="collapse" role="button"
-                                    aria-expanded="false" aria-controls="visaCollapse">VISA/FLIGHT</a>
+                                <a href="#visaCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false"
+                                    aria-controls="visaCollapse">VISA/FLIGHT</a>
                             </h4>
                             <div id="visaCollapse" class="collapse">
                                 <p class="m-0">
@@ -170,27 +170,57 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 pb-1">
-    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
-        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
-        <div class="pl-4">
-            <h4>
-                <a href="#germanCollapse" class="text-dark" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="germanCollapse">LEARN GERMAN</a>
-            </h4>
-            <div id="germanCollapse" class="collapse">
-                <p class="m-0">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#germanCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false"
+                                    aria-controls="germanCollapse">LEARN GERMAN</a>
+                            </h4>
+                            <div id="germanCollapse" class="collapse">
+                                <p class="m-0">
 
 
-                    Start learning early with our recommended <a href="https://www.etsy.com/shop/LingoSheets?ref=profile_header" target="_blank">GERMAN LEARNING MATERIALS</a> to prepare for your Austrian adventure. Our curated resources help you build vocabulary, grammar, and conversational skills specifically useful for academic and daily life in Austria.
-                    <br><br>
-                    German language proficiency is essential for anyone considering studying or relocating to Austria. While some university programs are offered in English, daily life, administrative processes, and social integration all require German skills.
+                                    Start learning early with our recommended <a
+                                        href="https://www.etsy.com/shop/LingoSheets?ref=profile_header" target="_blank">GERMAN LEARNING
+                                        MATERIALS</a> to prepare for your Austrian adventure. Our curated resources help you build
+                                    vocabulary, grammar, and conversational skills specifically useful for academic and daily life in
+                                    Austria.
+                                    <br><br>
+                                    German language proficiency is essential for anyone considering studying or relocating to Austria.
+                                    While
+                                    some university programs are offered in English, daily life, administrative processes, and social
+                                    integration all require German skills.
 
-                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- IELTS Coaching Section -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px">
+                        <i class="flaticon-035-book h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>
+                                <a href="#ieltsCollapse" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false"
+                                    aria-controls="ieltsCollapse">IELTS COACHING</a>
+                            </h4>
+                            <div id="ieltsCollapse" class="collapse">
+                                <p class="m-0">
+                                    Prepare for your IELTS exam with our specialized coaching program. We offer comprehensive training
+                                    in all four modules: Listening, Reading, Writing, and Speaking. Our experienced instructors provide
+                                    personalized feedback, test strategies, and practice materials to help you achieve your desired band
+                                    score. Whether you're aiming for academic or general training, we'll help you build the skills and
+                                    confidence needed for success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-            </div>
+
         </div>
     </div>
     <!-- Facilities Start -->
@@ -257,7 +287,7 @@
                     @endif
                     <div class="card border-0">
                         <div class="card-header bg-secondary text-center p-4">
-                            <h1 class="text-white m-0">Book Appointment FOR &#8364 20</h1>
+                            <h1 class="text-white m-0">Book Appointment FOR &#8364 20 and N10,000 [For Nigerians]</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form action="{{ url('dataInsert') }}" method="post" enctype="multipart/form-data">
@@ -283,18 +313,20 @@
                                         placeholder="Your Email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select border-0 px-4" name="ambassador" style="height: 47px">
+                                    <select class="custom-select border-0 px-4" name="ambassador" style="height: 47px" required>
                                         <option selected>Choose an Ambassador</option>
                                         <option value="Benedict Anemba">Benedict Anemba</option>
-                                        <option value="Daniel">Daniel Sesan (Austria)</option>
-                                        <option value="Stephen">Mary Farma (Netherlands)</option>
-                                        <option value="Malachi">Malachi Gblee (Switzerland)</option>
-                                        <option value="Peter">Peter Ohwoka (China)</option>
-                                        <option value="Akinola ">Akinola Lanre Olusegun (Austria)</option>
-                                        <option value="Hyeladzira ">Hyeladzira James (United Kingdoms)</option>
-                                        <option value="Estherine ">Estherine Efeti Lisinge (Austria) </option>
-                                        <option value="Nnenna ">Uzoma Nnenna Okey </option>
-                                        <option value="Lawrence ">Lawrence Emmanuel (Austria)</option>
+                                        <option value="Daniel Sesan">Daniel Sesan (Austria)</option>
+                                        <option value="Samuel Okonkwo">Samuel Okonkwo
+                                            (Austria)</option>
+                                        <option value="Mary Farma">Mary Farma (Netherlands)</option>
+                                        <option value="Malachi Gblee">Malachi Gblee (Switzerland)</option>
+                                        <option value="Peter Ohwoka">Peter Ohwoka (China)</option>
+                                        <option value="Akinola Olusegun ">Akinola Olusegun (Austria)</option>
+                                        <option value="Hyeladzira James ">Hyeladzira James (United Kingdoms)</option>
+                                        <option value="Estherine Lisinge ">Estherine Lisinge (Austria) </option>
+                                        <option value="Nnenna Okey ">Nnenna Okey</option>
+                                        <option value="Lawrence Emmanuel">Lawrence Emmanuel (Austria)</option>
                                     </select>
                                 </div>
                                 <div>
@@ -309,119 +341,7 @@
             </div>
         </div>
     </div>
-    <!-- Registration End -->
 
-    <!-- Team Start -->
-    {{-- <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5">
-                    <span class="px-2">Our Ambassadors</span>
-                </p>
-                <h1 class="mb-4">Meet Our Ambassadors</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/Benedict-24.jpg" style="height: 250px;" alt="" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px"
-                                href="https://x.com/anembaben" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <!-- <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px"
-                                    href="#"><i class="fab fa-facebook-f"></i></a> -->
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
-                                href="https://www.linkedin.com/in/btanemba/" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Benedict Anemba</h4>
-                    <i>Founder</i><br>
-                    <h>Masters in Communication Engineering - CAUS</h><br>
-                    <h>Junior Software Developer</h><br>
-                    <h>Instagram Social Media Ambassador for CAUS
-                        <h /><br>
-                        <h>Entreprenuer</h>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/danny.jpeg" style="height: 250px;" alt="" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
-                                href="https://www.linkedin.com/in/ilesanmi-sesan-daniel-89518326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Daniel Ilesanmi</h4>
-                    <i>RF Component and Software Development  Engineer<br>
-                        Electronics Embedded systems design <br>
-                        Social Media Ambassador for CUAS <br>
-                        Entrepreneur</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/Malachi.jpg" style="height: 250px;" alt="" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
-                                href="https://www.linkedin.com/in/malachi-gblee-90127114b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Malachi Gblee</h4>
-                    <i>Masters of Science in Global Business</i><br>
-                    <i>Location: Switzerland</i><br>
-                    Work with the Liberian permanent mission as a researcher
-
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/Mary.jpeg" style="height: 250px;"alt="" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
-                                href="https://www.linkedin.com/in/mary-farma-13448879?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Mary Farma</h4>
-                    <i>Bachelor in Finance & Accounting</i><br>
-                    <i>Location: Netherlands</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/Nneena.jpeg" style="height: 250px;"alt="" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
-                                href="https://www.linkedin.com/in/mary-farma-13448879?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Uzoma Nnenna Okey </h4>
-                    <i>Free-lance Virtual Assistant</i><br>
-                    <i>Admission Process Assistant</i><br>
-                    <i>Location: Nigeria</i>
-                </div>
-
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%">
-                        <img class="img-fluid w-100" src="img/Akin.jpeg" style="height: 250px;"alt="" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px"
-                                href="https://www.linkedin.com/in/mary-farma-13448879?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Akinola, Lanre Olusegun </h4>
-                    <i>Masters in Artificial intelligence and Cybersecurity <br>
-                     Alpen-Adria-Universität  </i><br>
-                    <i>Location: Klagenfurt,  Austria</i>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- Team End -->
 
     <!-- Team Start -->
     <div class="container-fluid pt-5">
@@ -505,6 +425,7 @@
                         <img class="img-fluid w-100" src="img/Nneena.jpeg" style="height: 250px;" alt="" />
                     </div>
                     <h4 class="toggle-info" data-target="#nneena-info">Uzoma Nnenna Okey</h4>
+                    <h6>ADMINISTRATIVE STAFF</h6>
                     <div id="nneena-info" class="info collapse">
                         <i>Freelance Virtual Assistant</i><br>
                         <i>Admission Process Assistant</i><br>
@@ -582,6 +503,23 @@
                     </div>
 
                 </div>
+
+                <!-- Samuel Okonkwo -->
+                <div class="col-md-6 col-lg-3 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 30%;">
+                        <img class="img-fluid w-100" src="img/Samuel.jpg" style="height: 250px;" alt="Samuel Okonkwo">
+                    </div>
+                    <h4 class="toggle-info" data-target="#samuel-info">Samuel Okonkwo</h4>
+                    <h6>IELT INSTRUCTOR</h6>
+                    <div id="samuel-info" class="info collapse">
+                        <i>Masters in System Design</i><br>
+                        <i>Carinthia University of Applied Sciences</i><br>
+                        <a href="https://www.linkedin.com/in/samuelhq-okonkwo/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- Team End -->
@@ -600,4 +538,4 @@
                 });
             });
         </script>
-    @endsection
+@endsection

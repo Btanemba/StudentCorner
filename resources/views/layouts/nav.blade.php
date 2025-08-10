@@ -17,13 +17,14 @@
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="#" class="dropdown-item">Benedict Anemba</a>
                         <a href="#" class="dropdown-item">Daniel Sesan (Austria)</a>
+                        <a href="#" class="dropdown-item">Samuel Okonkwo (Austria)</a>
                         <a href="#" class="dropdown-item">Mary Farma (Netherlands)</a>
                         <a href="#" class="dropdown-item">Malachi Gblee (Switzerland)</a>
                         <a href="#" class="dropdown-item">Peter Ohwoka (China)</a>
                         <a href="#" class="dropdown-item">Uzoma Nnenna Okey</a>
                         <a href="#" class="dropdown-item">Hyeladzira James (United Kingdoms)</a>
                         <a href="#" class="dropdown-item">Akinola, Lanre Olusegun (Austria)</a>
-                        <a href="#" class="dropdown-item">Estherine Efeti Lisinge (Austria)</a>
+                        <a href="#" class="dropdown-item">Estherine Lisinge (Austria)</a>
                         <a href="#" class="dropdown-item">Emmanuel Lawrence (Austria)</a>
 
 
@@ -41,10 +42,12 @@
                     </div>
 
                 </div>
-                
+
                 <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
+                 <a href="https://skillprofinder.org/" target="_blank" class="nav-item nav-link">Jobs</a>
             </div>
             <a href="#appointment" class="btn btn-primary px-4">Book Session</a>
+
         </div>
     </nav>
 
