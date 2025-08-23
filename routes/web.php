@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ClientLookupController;
 
 
 
@@ -24,3 +25,7 @@ Route::get('/team', function () {
 });
 Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
+Route::get('/client-lookup', [ClientLookupController::class, 'index'])->name('client.lookup');
+Route::post('/client-lookup', [ClientLookupController::class, 'search'])->name('client.search');
+

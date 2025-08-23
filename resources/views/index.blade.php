@@ -225,6 +225,35 @@
         </div>
     </div>
     <!-- Facilities Start -->
+<!-- Client Application Lookup Start -->
+<div class="container-fluid py-5 bg-light">
+    <div class="container">
+        <div class="text-center pb-4">
+            <p class="section-title px-5"><span class="px-2">Check Your Application with Us</span></p>
+            <h2 class="mb-4">Enter Your Client Reference</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        {{ $errors->first() }}
+                    </div>
+                @endif
+
+                <form action="{{ route('client.search') }}" method="POST" class="bg-white p-4 shadow rounded">
+                    @csrf
+                    <div class="form-group mb-3">
+                        <input type="text" name="client_ref" class="form-control border-0 p-3"
+                               placeholder="Enter your Client Reference (e.g. SC-ABC12345)" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block py-3">Check Status</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Client Application Lookup End -->
 
     <!-- About Start -->
     <div class="container-fluid py-5">
