@@ -39,7 +39,12 @@ class UniversityCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::setFromDb(); // set columns from db columns.
+        //CRUD::setFromDb(); // set columns from db columns.
+        CRUD::column('name')->type('text');
+        CRUD::column('link')->type('url');
+       
+        CRUD::column('admission_starts')->type('date');
+
 
         /**
          * Columns can be defined using the fluent syntax:

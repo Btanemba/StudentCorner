@@ -61,6 +61,13 @@ class ClientCrudController extends CrudController
             'type' => 'text',
         ]);
 
+        CRUD::addColumn([
+            'name' => 'documents',
+            'label' => 'Documents',
+            'type' => 'upload_multiple',
+            'disk' => 'public',
+        ]);
+
         // Status
         CRUD::addColumn([
             'name' => 'status',
@@ -95,7 +102,8 @@ class ClientCrudController extends CrudController
             'label' => 'Client Reference',
             'type' => 'text',
             'attributes' => [
-                'readonly' => 'readonly', // user cannot edit
+                'readonly' => 'readonly',
+                'style'    => 'background-color: #d3d3d3; color: #333;',
             ],
             'wrapper' => [
                 'class' => 'form-group col-md-12',
@@ -189,6 +197,10 @@ class ClientCrudController extends CrudController
             'wrapper' => [
                 'class' => 'form-group col-md-6',
             ],
+            'attributes' => [
+        'readonly' => 'readonly',
+        'style'    => 'background-color: #d3d3d3; color: #333;',
+    ],
         ]);
 
         CRUD::addField([
@@ -198,6 +210,10 @@ class ClientCrudController extends CrudController
             'wrapper' => [
                 'class' => 'form-group col-md-6',
             ],
+            'attributes' => [
+        'readonly' => 'readonly',
+        'style'    => 'background-color: #d3d3d3; color: #333;',
+    ],
         ]);
 
 
@@ -219,4 +235,61 @@ class ClientCrudController extends CrudController
     {
         $this->setupCreateOperation();
     }
+
+    public function destroy($id)
+    {
+        $user = backpack_user(); // get the currently logged-in Backpack user
+
+        if ($user->email !== 'anembaben@gmail.com') {
+            // optionally, you can flash a message to the user
+            \Alert::error('You are not authorized to delete this client.')->flash();
+            return redirect()->back();
+        }
+
+        // proceed with the default delete operation
+        return $this->crud->delete($id);
+    }
+
+    protected function setupShowOperation()
+{
+    CRUD::addColumn([
+        'name' => 'client_ref',
+        'label' => 'Client Reference',
+        'type' => 'text',
+    ]);
+
+    CRUD::addColumn([
+        'name' => 'first_name',
+        'label' => 'First Name',
+        'type' => 'text',
+    ]);
+
+    CRUD::addColumn([
+        'name' => 'last_name',
+        'label' => 'Last Name',
+        'type' => 'text',
+    ]);
+
+    CRUD::addColumn([
+        'name' => 'documents',
+        'label' => 'Documents',
+        'type' => 'upload_multiple',
+        'disk' => 'public',
+    ]);
+
+    CRUD::addColumn([
+        'name' => 'status',
+        'label' => 'Status',
+        'type' => 'text',
+    ]);
+
+    CRUD::addColumn([
+        'name' => 'staff_handler',
+        'label' => 'Staff Handler',
+        'type' => 'text',
+    ]);
+}
+
+
+
 }

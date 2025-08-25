@@ -102,74 +102,49 @@ class Client extends Model
     |--------------------------------------------------------------------------
     */
 
+    // protected static function booted()
+    // {
+    //     static::creating(function ($client) {
+    //         do {
+    //             // Generate a random alphanumeric string, 8 chars long
+    //             $randomRef = 'SC-' . strtoupper(Str::random(8));
+    //         } while (static::where('client_ref', $randomRef)->exists());
+
+    //         $client->client_ref = $randomRef;
+    //     });
+    // }
+
     protected static function booted()
-    {
-        static::creating(function ($client) {
-            do {
-                // Generate a random alphanumeric string, 8 chars long
-                $randomRef = 'SC-' . strtoupper(Str::random(8));
-            } while (static::where('client_ref', $randomRef)->exists());
+{
+    parent::boot();
 
-            $client->client_ref = $randomRef;
-        });
-    }
+    static::creating(function ($client) {
+        $client->created_by = auth()->id();
+    });
 
+    static::updating(function ($client) {
+        $client->updated_by = auth()->id();
+    });
+
+    // keep your client_ref generator too
+    static::creating(function ($client) {
+        do {
+            $randomRef = 'SC-' . strtoupper(Str::random(8));
+        } while (static::where('client_ref', $randomRef)->exists());
+
+        $client->client_ref = $randomRef;
+    });
+}
+
+   // Handle file upload for multiple documents
     public function setDocumentsAttribute($value)
     {
         $attribute_name = "documents";
         $disk = "public";
-        $destination_path = "documents/clients";
+        $destination_path = "uploads/documents";
 
-        // Get the current documents (if any)
-        $current_documents = $this->{$attribute_name} ?? [];
-
-        // Initialize array for new uploaded files
-        $new_uploaded_files = [];
-
-        // Check if new files are being uploaded
-        if (request()->hasFile($attribute_name)) {
-            foreach (request()->file($attribute_name) as $file) {
-                if ($file && $file->isValid()) {
-                    // Generate a new file name
-                    $new_file_name = md5($file->getClientOriginalName().time()).'.'.$file->getClientOriginalExtension();
-
-                    // Move the new file to the correct path
-                    $file_path = $file->storeAs($destination_path, $new_file_name, $disk);
-
-                    // Add the path to the new uploaded files array
-                    $new_uploaded_files[] = $file_path;
-                }
-            }
-        }
-
-        // Merge existing documents with new uploaded files
-        $all_documents = array_merge($current_documents, $new_uploaded_files);
-
-        // Remove any duplicates and empty values
-        $all_documents = array_unique(array_filter($all_documents));
-
-        // Save the merged array
-        $this->attributes[$attribute_name] = !empty($all_documents) ? json_encode($all_documents) : null;
+        $this->uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path);
     }
-
-    public function getDocumentsAttribute($value)
-    {
-        $decoded = json_decode($value, true);
-        return is_array($decoded) ? array_filter($decoded) : [];
-    }
-
-    // Optional: Add a method to remove specific documents
-    public function removeDocument($file_path)
-    {
-        $documents = $this->documents;
-        $documents = array_filter($documents, function($doc) use ($file_path) {
-            return $doc !== $file_path;
-        });
-
-        $this->documents = $documents;
-        $this->save();
-    }
-
 
 
 
