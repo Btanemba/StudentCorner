@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ClientLookupController;
+use App\Http\Controllers\Admin\MessageCrudController;
 
 
 
@@ -28,4 +29,6 @@ Route::post('/contact', [ContactController::class, 'send'])->name('contact.send'
 
 Route::get('/client-lookup', [ClientLookupController::class, 'index'])->name('client.lookup');
 Route::post('/client-lookup', [ClientLookupController::class, 'search'])->name('client.search');
+
+Route::get('message/chat', [MessageCrudController::class, 'chat'])->name('message.chat');
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+ use App\Http\Controllers\Admin\MessageCrudController;
 
 // --------------------------
 // Custom Backpack Routes
@@ -21,6 +22,10 @@ Route::group([
     Route::crud('university-application', 'UniversityApplicationCrudController');
 
      Route::crud('university', 'UniversityCrudController');
+    Route::crud('message', 'MessageCrudController');
+
+
+Route::get('message/chat', [MessageCrudController::class, 'chat'])->name('message.chat');
 }); // this should be the absolute last line of this file
 
 /**

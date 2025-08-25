@@ -7,6 +7,13 @@
 
 <x-backpack::menu-item title="Universities" icon="la la-university" :link="backpack_url('university')" />
 
+
+{{-- <x-backpack::menu-item title="Messages" icon="la la-comments" :link="backpack_url('message')" />
+ --}}
+
+ <x-backpack::menu-item title="Communication" icon="la la-comments" :link="backpack_url('message/chat')" />
+
+
 <x-backpack::menu-item
     title="Mail"
     icon="la la-envelope"
